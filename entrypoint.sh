@@ -12,6 +12,10 @@
         warp-cli --accept-tos set-license $LICENSE
     fi
 
+    if [ ! -z $WARP_IP ]; then
+        echo "y" | warp-cli api endpoint set $WARP_IP
+    fi
+    
     warp-cli --accept-tos mode proxy
     warp-cli --accept-tos proxy port 40001
     warp-cli --accept-tos connect
