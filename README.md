@@ -25,3 +25,7 @@ Lookup your warp ip location
 curl -x socks5://127.0.0.1:40000 https://speed.cloudflare.com/__down?bytes=1000000000 > /dev/null
 ````
 Speedtest
+
+## Add Env
+
+- WARP_IP: EndPoint IP
